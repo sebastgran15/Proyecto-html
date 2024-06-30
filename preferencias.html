@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotwailler</title>
+    <meta http-equiv="refresh" content="5">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        font-family: "Lucida Console", 'Courier New', Courier, monospace;
+        background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    h2 {
+        margin: 15px;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #92a4ff;
+    }
+
+    h1 {
+        background-color: black;
+        color: #92a4ff;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    table{
+        border-collapse: collapse;
+        border: 2px solid rgb(200,200,200);
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        background-color: #fff;
+    }
+    td{
+        border: 1px solid rgb(190,190,190);
+        padding: 10px 20px;
+    }
+    th{
+        border: 1px solid rgb(190,190,190);
+        padding: 10px 20px;
+        background-color: rgb(162,162,162);
+    }
+    .footer{
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+    }
+</style>
+
+<body>
+    <h1>Los Rotwailler</h1>
+
+    <head>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisules.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </head>
+    <h2>Preferencia de los Rotwailer</h2>
+    <hr>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207,207);">
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>Prefiere:</th>
+            <th>No le gusta</th>
+
+            <tr>
+                <td>Alimento</td>
+                <td>Concentrado Dogchow</td>
+                <td>Concentrado mimados</td>
+            </tr>
+            <tr>
+                <td>Accesorios</td>
+                <td>Pechera</td>
+                <td>Collares</td>
+            </tr>
+            <tr>
+                <td>Juguetes</td>
+                <td>Hueso para morder</td>
+                <td>El agua</td>
+            </tr>
+            <tr>
+                <td>Actividades</td>
+                <td>Correr en el campo</td>
+                <td>Dejar barrer</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>

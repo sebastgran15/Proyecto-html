@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotwailler</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="refresh" content="5">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        font-family: "Lucida Console", 'Courier New', Courier, monospace;
+        background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    h2 {
+        margin: 15px;
+        font-size: 24px;
+        padding: 0;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #92a4ff;
+    }
+
+    h1 {
+        background-color: black;
+        color: #92a4ff;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: orange;
+        color: #fff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover{
+        background-color: orangered;
+        transition: background-color 1s;
+    }
+    div.container{
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    .footer{
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+    }
+</style>
+
+<body>
+    <h1>Contactanos</h1>
+
+    <head>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisules.html">Audiovisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </head>
+    <h2>Si te gustaria tu pagina Web dejanos tus datos para contactarte.</h2>
+    <hr>
+
+    <div class="container">
+        <form action="">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" minlength="3" placeholder="Escribe tu nombre" required>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" minlength="3" placeholder="Escribe tu apellido" required>
+            <label for="email">Correo: </label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu Correo aquí" required>
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais" required>
+                <optgroup label="Centro America">
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Panama">Panama</option>
+                </optgroup>
+
+                <optgroup label="Sudamerica">
+                    <option value="Brasil">Brasil</option>
+                    <option value="Peru">Perú</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Ecuador">Ecuador</option>
+                </optgroup>
+            </select>
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario"
+                placeholder="Dinos como te gustaria y sobre que tema"></textarea>
+            <label for="tipo"><b>Tipo de sitio web</b></label>
+            <input type="radio" name="tipo" id="tipo"><i>Langing Page</i>
+            <input type="radio" name="tipo" id="tipo"><i>Ecommerce</i>
+            <input type="radio" name="tipo" id="tipo"><i>Pagina Corporativa</i>
+            <input type="radio" name="tipo" id="tipo"><i>Foro</i>
+            <input type="radio" name="tipo" id="tipo"><i>Portal de Noticias</i>
+            <input type="radio" name="tipo" id="tipo"><i>Reclamo</i>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>

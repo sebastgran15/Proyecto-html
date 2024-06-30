@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotwailler</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="refresh" content="5">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        font-family: "Lucida Console", 'Courier New', Courier, monospace;
+        background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    h2 {
+        margin: 15px;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #92a4ff;
+    }
+
+    h1 {
+        background-color: black;
+        color: #92a4ff;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .video {
+        width: 70%;
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 33vw;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .centrado {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #FFF;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+    }
+</style>
+
+<body>
+    <h1>Los Rotwailler</h1>
+
+    <head>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="audiovisules.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </head>
+    <h2>Conozcamos más al Rotwailer</h2>
+    <hr>
+
+    <div class="video">
+        <iframe class="centrado" width="100%" height="100%"
+            src="https://www.youtube.com/embed/_a-LQAUP2OI?si=2r7d34DUvaqljhAO" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="assets/imagenes/comida-rottweile-1400x727.jpg" target="_blank"><img
+                    src="assets/imagenes/comida-rottweile-1400x727.jpg" width="600" alt="image1" loading="lazy"></a>
+            <div class="desc">Rotwailer 1</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/imagenes/como_es_el_temperamento_del_rottweiler_52194_orig.jpg" target="_blank"><img
+                    src="assets/imagenes/como_es_el_temperamento_del_rottweiler_52194_orig.jpg" width="600"
+                    loading="lazy" alt="Rotwailler 2"></a>
+            <div class="desc">Rotwailer 2</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/imagenes/fotolia_80512914.jpg" target="_blank"><img
+                    src="assets/imagenes/fotolia_80512914.jpg" width="600" alt="Rotwailler 3" loading="lazy"></a>
+            <div class="desc">Rotwailer 3</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/imagenes/Rottweiler-1.jpg" target="_blank"><img src="assets/imagenes//Rottweiler-1.jpg"
+                    alt="Rotwailler 4" loading="lazy" width="600"></a>
+            <div class="desc">Rotwailer 4</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/imagenes/Rottweiler-im-Wasser.jpg" target="_blank"><img
+                    src="assets/imagenes/Rottweiler-im-Wasser.jpg" alt="Rotwailler 5" loading="lazy" width="600"></a>
+            <div class="desc">Rotwailer 5</div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
