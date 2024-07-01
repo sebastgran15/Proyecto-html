@@ -105,6 +105,33 @@
         text-align: center;
         clear: both;
     }
+    @media (max-width: 720px){
+        li a {
+            padding: 7px 8px;
+            font-size: 0.8em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+        .video{
+            display: block;
+            width: 450px;
+            height: 300px;
+        }
+        div.gallery{
+            float: none;
+        }
+        .centrado:not(iframe){
+            width: calc(100% / 3);
+            flex-direction: column;
+            width: 100%;
+        }
+        div.gallery{
+            width: 90%;
+            margin: auto;
+        }
+    }
 </style>
 
 <body>

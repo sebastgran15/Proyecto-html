@@ -87,23 +87,49 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    input[type=submit]:hover{
+
+    input[type=submit]:hover {
         background-color: orangered;
         transition: background-color 1s;
     }
-    div.container{
+
+    label {
+        display: block;
+        padding: 10px;
+    }
+
+    .inline {
+        width: unset;
+        margin: 0 0.5rem 0 0;
+        vertical-align: middle;
+    }
+
+    div.container {
         width: 70%;
         margin: 0 auto;
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
     }
-    .footer{
+
+    .footer {
         background-color: #333;
         color: #fff;
         padding: 10px;
         text-align: center;
         clear: both;
+    }
+
+    @media (max-width: 720px) {
+        li a {
+            padding: 7px 8px;
+            font-size: 0.8em;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
     }
 </style>
 
@@ -157,14 +183,21 @@
             <label for="comentario">Comentario:</label>
             <textarea name="comentario" id="comentario"
                 placeholder="Dinos como te gustaria y sobre que tema"></textarea>
-            <label for="tipo"><b>Tipo de sitio web</b></label>
-            <input type="radio" name="tipo" id="tipo"><i>Langing Page</i>
-            <input type="radio" name="tipo" id="tipo"><i>Ecommerce</i>
-            <input type="radio" name="tipo" id="tipo"><i>Pagina Corporativa</i>
-            <input type="radio" name="tipo" id="tipo"><i>Foro</i>
-            <input type="radio" name="tipo" id="tipo"><i>Portal de Noticias</i>
-            <input type="radio" name="tipo" id="tipo"><i>Reclamo</i>
-            <input type="submit" value="Enviar">
+            <legend><b>Tipo de sitio web</b< /legend>
+                    <label for="landing-page"><input type="radio" name="tipo" id="landing-page"
+                            class="inline"><i>Langing Page</i>
+                    </label>
+                    <label for="ecommerce"><input type="radio" name="tipo" id="ecommerce"
+                            class="inline"><i>Ecommerce</i></label>
+                    <label for="pagina-corporativa"><input type="radio" name="tipo" id="pagina-corporativa"
+                            class="inline"><i>Pagina
+                            Corporativa</i></label>
+                    <label for="foro"><input type="radio" name="tipo" id="foro" class="inline"><i>Foro</i></label>
+                    <label for="noticias"><input type="radio" name="tipo" id="noticias" class="inline"><i>Portal de
+                            Noticias</i></label>
+                    <label for="reclamo"><input type="radio" name="tipo" id="reclamo"
+                            class="inline"><i>Reclamo</i></label>
+                    <input type="submit" value="Enviar">
         </form>
     </div>
 
