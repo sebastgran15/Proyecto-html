@@ -15,7 +15,7 @@ Este fue mi primer proyecto con lo aprendido de HTML
 
 ### The challenge
 
-- Build out the project to the designs provided
+- Crear blog de una pagina
 
 ### Links
 - Netlify (https://rotwailler.netlify.app/)
